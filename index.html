@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/main.css">
-    <title>App</title>
-</head>
-<body>
-    <h1>From VSCode</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/main.css" />
+    <script
+      src="https://kit.fontawesome.com/cb79222314.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container .bg-light text-start">
+      <div class="row mt-3">
+        <form class="mt-3" id="search-city">
+          <input type="search" placeholder="Enter your city..." id="city-input"/>
+          <button id="searchCity" class="btn btn-warning">Search</button>
+          <button id="currentCity" class="btn btn-success">Current city</button> 
+        </form>
+      </div>
+      <div class="row text-start mt-5">
+        <h2 id="city">Lviv</h2>
+        <h5 id="current-day"></h5>
+        <h5>Sunny</h5>
+      </div>
+      <div class="mt-3 p-2 d-flex align-items-center">
+        
+            <div class="weather">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+              alt="Sunny"
+            />
+          </div>
+          
+          <div class="temp">
+            <span class="temp" id="temperature">23</span> <sup><a href="#" id = "ceilcium">°C</a> | <a href="#" id = "farenh">°F</a></sup>
+          </div>
+          <div class="fs-6 wind">
+          <h6 id="precipitation">Precipitation: 68%</h6>
+          <h6 id="wind">Wind: 11km/h</h6>
+          </div>
+      </div>
+      <div class="row row-col-5 text-center mt-5 days">
+        <div class="col day">Wed</div>
+        <div class="col day">Thu</div>
+        <div class="col day">Fri</div>
+        <div class="col day">Sat</div>
+        <div class="col day">Sun</div>
+      </div>
+      <div class="row row-col-5 text-center mt-3">
+        <div class="col">
+          <div class="weather">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="Cloudy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="weather">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+              alt="Rainy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="weather">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="Cloudy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="weather">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+              alt="Partly Cloudy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="weather">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+              alt="Partly Cloudy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row row-col-5 text-center mt-3">
+        <div class="col">23°</div>
+        <div class="col">19°</div>
+        <div class="col">24°</div>
+        <div class="col">29°</div>
+        <div class="col">32°</div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>

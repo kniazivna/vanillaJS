@@ -1,3 +1,45 @@
-body{
-    color: chartreuse;
+body {
+  color: grey;
+}
+
+.container{
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.weather{
+  margin-right: 15px;
+}
+div.temp{
+margin-right: 50px;
+}
+
+.temp {
+  font-weight: 700;
+  font-size: 20px;
+}
+.temp a{
+  color: grey;
+  text-decoration: none;
+}
+
+.temp a:focus{
+  font-weight: bolder;
+  color: #000;
+}
+
+.days {
+  font-size: 18px;
+  font-weight: 800px;
+}
+
+.day:hover {
+  border: 2px rgb(167, 166, 166) solid;
+  border-radius: 15px;
+}
+
+.weather img {
+  width: 50px;
 }

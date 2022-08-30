@@ -3,9 +3,14 @@ body {
 }
 
 .container{
-  border: 1px solid gainsboro;
-  border-radius: 8px;
   padding: 20px;
+  margin-top: 20px;
+}
+
+.wrapper{
+ border: 1px solid gainsboro;
+  border-radius: 8px;
+   padding: 20px;
   margin-top: 20px;
 }
 
@@ -42,4 +47,8 @@ margin-right: 50px;
 
 .weather img {
   width: 50px;
+}
+
+.owner{
+  margin-top: 20px;;
 }
